@@ -39,7 +39,7 @@ stoprule = yes stopval = 0.01 nruns = 2 nchains = 5 savebrlens = yes;
 mcmc;
 sumt filename = FILENAME.nex nRuns = 2 Relbrunin = YES 
     BurninFrac = 0.25 Contype = Allcompat;
-END;``` 
+END;```
 
    #&#xfeff; run mixed model
    #&#xfeff; convert alignment to Nexus format
