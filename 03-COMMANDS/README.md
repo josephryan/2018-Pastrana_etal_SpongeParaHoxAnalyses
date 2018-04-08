@@ -4,36 +4,47 @@
 
    #&#xfeff; copy an alignment to the current working directory 
    #&#xfeff; convert alignment to phylip and rename to "infile"
-   ```protdist
+
+```protdist
 ```
-   ```P <enter> to change model (used JTT, PMB, PAM, and kimura)
-   Y
+
+P <enter> to change model (used JTT, PMB, PAM, and kimura)
+
+```Y
 ```
-   ```mv outfile infile
+
+```mv outfile infile
 ```
-   ```neighbor
+
+```neighbor
 ```
-   ```Y
+
+```Y
 ```
    #&#xfeff; rename outtree and outfile according to alignment and model
    #&#xfeff; for example for the JTT analysis of the Fortunato_150.fasta alignment
-   ```mv outtree 150-nj-jtt.tre
+
+```mv outtree 150-nj-jtt.tre
 ```
-   ```$ mv outfile 150-nj-jtt.outfile
+
+```$ mv outfile 150-nj-jtt.outfile
 ```
 
 2. Maximum likelihood 
 
    #&#xfeff; run LG, WAG, JTT 
    #&#xfeff; run with 5 parsimony starting trees and 100 bootstraps
-   ```raxmlHPC-SSE3 -f a -p 1021 -# 5 -m PROTGAMMA[MODEL] -s [ALIGNMENT] -x 5640 -N 100 -n [NAME].mp
+
+```raxmlHPC-SSE3 -f a -p 1021 -# 5 -m PROTGAMMA[MODEL] -s [ALIGNMENT] -x 5640 -N 100 -n [NAME].mp
 ```
-   # run with 5 random starting trees and 100 bootstraps
-   ```raxmlHPC-SSE3 -f a -d -p 1021 -# 5 -m PROTGAMMA[MODEL] -s [ALIGNMENT] -x 5640 -N 100 -n [NAME].rt
+   #&#xfeff; run with 5 random starting trees and 100 bootstraps
+
+```raxmlHPC-SSE3 -f a -d -p 1021 -# 5 -m PROTGAMMA[MODEL] -s [ALIGNMENT] -x 5640 -N 100 -n [NAME].rt
 ```
-   # To identify the best tree compare the likelihood values between 
-   # the parsimony and random starting tree runs
-   ```grep 'Starting final GAMMA-based' *info*
+   #&#xfeff; To identify the best tree compare the likelihood values between 
+   #&#xfeff; the parsimony and random starting tree runs
+
+```grep 'Starting final GAMMA-based' *info*
 ```
 
 3. Bayesian 
@@ -41,6 +52,7 @@
    #&#xfeff; run LG, WAG, JTT, 
    #&#xfeff; convert alignment to Nexus format
    #&#xfeff; add the following Bayes block (substitute MODEL with LG, WAG, or JTT)
+
 ```BEGIN MRBAYES;
 prset aamodelpr=fixed(MODEL); lset rates = gamma; 
 mcmcp ngen = 10000000 samplefreq = 10000 mcmcdiagn = yes 
@@ -54,6 +66,7 @@ END;
    #&#xfeff; run mixed model
    #&#xfeff; convert alignment to Nexus format
    #&#xfeff; add the following Bayes block (substitute MODEL with LG, WAG, or JTT)
+
 ```BEGIN MRBAYES;
 prset aamodelpr=mixed; lset rates = gamma; 
 mcmcp ngen = 10000000 samplefreq = 10000 mcmcdiagn = yes 
@@ -74,11 +87,15 @@ END;
 5. AU tests
 
   #&#xfeff; run a constrained ML analysis
-  ```raxmlHPC -g [CONSTRAINT_FILE] -p 1021 -# 10 -s [ALIGNMENT] -m PROTGAMMALG -n [NAME]
+
+```raxmlHPC -g [CONSTRAINT_FILE] -p 1021 -# 10 -s [ALIGNMENT] -m PROTGAMMALG -n [NAME]
 ```
   #&#xfeff; copy tree above & best LG tree to a file called "competing trees"
-  ```raxmlHPC -f g -m PROTGAMMALG -z competing_trees -s [ALIGNMENT] -n [NAME]
 
+```raxmlHPC -f g -m PROTGAMMALG -z competing_trees -s [ALIGNMENT] -n [NAME]
+```
+
+```
 seqmt --puzzle RAxML_perSiteLLs.2trees
 makermt RAxML_perSiteLLs;
 consel RAxML_perSiteLLs;
