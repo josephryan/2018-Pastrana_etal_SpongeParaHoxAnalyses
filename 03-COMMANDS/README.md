@@ -65,7 +65,9 @@ grep 'Starting final GAMMA-based' *info*
 3. Bayesian 
 
    #&#xfeff; run LG, WAG, JTT, 
+
    #&#xfeff; convert alignment to Nexus format
+
    #&#xfeff; add the following Bayes block (substitute MODEL with LG, WAG, or JTT)
 
 ```BEGIN MRBAYES;
@@ -79,7 +81,9 @@ END;
 ```
 
    #&#xfeff; run mixed model
+
    #&#xfeff; convert alignment to Nexus format
+
    #&#xfeff; add the following Bayes block (substitute MODEL with LG, WAG, or JTT)
 
 ```BEGIN MRBAYES;
