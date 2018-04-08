@@ -21,10 +21,10 @@
    #&#xfeff; run LG, WAG, JTT 
    #&#xfeff; run with 5 parsimony starting trees and 100 bootstraps
    ```raxmlHPC-SSE3 -f a -p 1021 -# 5 -m PROTGAMMA[MODEL] -s [ALIGNMENT] -x 5640 -N 100 -n [NAME].mp```
-   #&#xfeff; run with 5 random starting trees and 100 bootstraps
+   # run with 5 random starting trees and 100 bootstraps
    ```raxmlHPC-SSE3 -f a -d -p 1021 -# 5 -m PROTGAMMA[MODEL] -s [ALIGNMENT] -x 5640 -N 100 -n [NAME].rt```
-   #&#xfeff; To identify the best tree compare the likelihood values between 
-   #&#xfeff; the parsimony and random starting tree runs
+   # To identify the best tree compare the likelihood values between 
+   # the parsimony and random starting tree runs
    ```grep 'Starting final GAMMA-based' *info*```
 
 3. Bayesian 
@@ -57,7 +57,7 @@ END;```
 4. SOWH tests
 
 ```sowhat --constraint=CONSTRAINT_FILE --aln=ALIGNMENT_FILE] --raxml_model=PROTGAMMAJTT --dir=[FULL_PATH_TO_OUTDIR] --name=[NAME] --rax='/usr/local/bin/raxmlHPC-PTHREADS -T 46'```
-  #&#xfeff; constraint files are in the 01-CONSTRAINTS directory
+  # constraint files are in the 01-CONSTRAINTS directory
 
 5. AU tests
 
