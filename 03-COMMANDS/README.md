@@ -106,12 +106,16 @@ sowhat --constraint=CONSTRAINT_FILE --aln=ALIGNMENT_FILE] --raxml_model=PROTGAMM
 
 5. AU tests
 
-  #&#xfeff; run a constrained ML analysis
+  #&#xfeff; run a constrained ML analysis. We run 10 trees with random starting trees and 10 with parsimony starting trees.
 
 ```
 raxmlHPC -g [CONSTRAINT_FILE] -p 1021 -# 10 -s [ALIGNMENT] -m PROTGAMMALG -n [NAME]
+raxmlHPC -g [CONSTRAINT_FILE] -p 1021 -# 10 -s [ALIGNMENT] -m PROTGAMMALG -n [NAME] -d
+grep 'Starting final GAMMA-based' *info*
 ```
-  #&#xfeff; copy tree above & best LG tree to a file called "competing trees"
+  #&#xfeff; copy above tree with highest likelihood & best LG tree to a file called "competing trees"
+
+#&#xfeff; compute per site likelihoods
 
 ```
 raxmlHPC -f g -m PROTGAMMALG -z competing_trees -s [ALIGNMENT] -n [NAME]
