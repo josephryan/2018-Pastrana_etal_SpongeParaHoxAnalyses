@@ -1,0 +1,115 @@
+
+
+IMPORTANT WARNING: Sequences BflVent1 and BflVent2 are exactly identical
+
+
+IMPORTANT WARNING: Sequences NveAnthox8A and NveAx8B are exactly identical
+
+
+IMPORTANT WARNING: Sequences NveAntp023 and NveAntp076 are exactly identical
+
+
+IMPORTANT WARNING: Sequences TcaDr1 and TcaDr2 are exactly identical
+
+IMPORTANT WARNING
+Found 4 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates removed is printed to file 259.fa.reduced
+
+
+This is RAxML version 8.2.11 released by Alexandros Stamatakis on June 2017.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 60 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 0.24%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 10 inferences on the original alignment using 10 user-specified trees
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 60
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: LG
+Using fixed base frequencies
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-SSE3 -T 60 -g 259.con -p 1234 -# 10 -s 259.fa -m PROTGAMMALG -n F259_LG.con 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.079 0.056 0.042 0.053 0.013 0.041 0.072 0.057 0.022 0.062 0.099 0.065 0.023 0.042 0.044 0.061 0.053 0.012 0.034 0.069 
+
+Inference[0]: Time 278912.305671 GAMMA-based likelihood -14657.945040, best rearrangement setting 25
+alpha[0]: 0.843406 
+Inference[1]: Time 178789.864469 GAMMA-based likelihood -14669.279953, best rearrangement setting 25
+alpha[0]: 0.838032 
+Inference[2]: Time 206675.445257 GAMMA-based likelihood -14665.570949, best rearrangement setting 15
+alpha[0]: 0.840802 
+Inference[3]: Time 211551.013798 GAMMA-based likelihood -14691.813807, best rearrangement setting 25
+alpha[0]: 0.714024 
+Inference[4]: Time 248970.032809 GAMMA-based likelihood -14664.210923, best rearrangement setting 25
+alpha[0]: 0.833856 
+Inference[5]: Time 208233.344532 GAMMA-based likelihood -14659.423085, best rearrangement setting 25
+alpha[0]: 0.848804 
+Inference[6]: Time 265555.377954 GAMMA-based likelihood -14682.161925, best rearrangement setting 25
+alpha[0]: 0.883800 
+Inference[7]: Time 193274.177760 GAMMA-based likelihood -14666.399811, best rearrangement setting 15
+alpha[0]: 0.861084 
+Inference[8]: Time 211902.643372 GAMMA-based likelihood -14665.411770, best rearrangement setting 20
+alpha[0]: 0.847277 
+Inference[9]: Time 255216.137517 GAMMA-based likelihood -14661.222481, best rearrangement setting 25
+alpha[0]: 0.861345 
+
+
+Conducting final model optimizations on all 10 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -14657.885041 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.0
+Inference[1] final GAMMA-based Likelihood: -14669.460816 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.1
+Inference[2] final GAMMA-based Likelihood: -14665.653115 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.2
+Inference[3] final GAMMA-based Likelihood: -14677.176927 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.3
+Inference[4] final GAMMA-based Likelihood: -14664.300344 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.4
+Inference[5] final GAMMA-based Likelihood: -14659.386305 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.5
+Inference[6] final GAMMA-based Likelihood: -14682.110728 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.6
+Inference[7] final GAMMA-based Likelihood: -14666.446095 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.7
+Inference[8] final GAMMA-based Likelihood: -14665.394807 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.8
+Inference[9] final GAMMA-based Likelihood: -14661.292843 tree written to file /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_result.F259_LG.con.RUN.9
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -14657.885041 .... 
+
+Final GAMMA-based Score of best tree -14657.885041
+
+Program execution info written to /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_info.F259_LG.con
+Best-scoring ML tree written to: /bwdata1/jfryan/65-SPONGE_HOX_POST_REVIEW_RUNS/RAxML_bestTree.F259_LG.con
+
+Overall execution time: 2321934.092786 secs or 644.981692 hours or 26.874237 days
+
