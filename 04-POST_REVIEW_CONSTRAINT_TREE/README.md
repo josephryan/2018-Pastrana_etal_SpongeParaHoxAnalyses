@@ -30,26 +30,6 @@ the result as the likelihood score `-14673.914386` of the phyml tree
 was suboptimal to the RAxML tree that we reported. This phyml tree
 recovered putitive sponge Cdx genes in a clade with the NKL gene Ankl.
 
-## Details of the phyml tree
-The following is the command we ran:
-NOTE: `Fortunato_259.phy` is the phylip-formatted version of
-`../01-ALIGNMENTS/Fortunato_259.fasta`
-
-```
-phyml -i Fortunato_259.phy -d aa -b 100 -m LG -c 4 -a e
-```
-
-The output of the analysis is in the file:
-
-```
-phyml259.out
-```
-
-The best tree is in the file:
-```
-Fortunato_259.phy_phyml_tree.txt
-```
-
 ## Details of our constraint analysis
 The following is the command we ran:
 
